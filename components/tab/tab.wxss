@@ -1,0 +1,26 @@
+/* component/tab/tab.wxss */
+
+.swiper-tab {
+  height: 84rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  background-color: #0B95E9;
+}
+
+.swiper-tab-item {
+  color: white;
+  text-align: center;
+  line-height: 84rpx;
+  font-size: 26rpx;
+}
+
+.active {
+  color: white;
+  font-weight: bold;
+  border-bottom: 4rpx solid white;
+}
+
+.swiper {
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+<!--component/tab/tab.wxml-->
+<view class='swiper-tab'>
+  <block wx:for="{{titles}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+    <view class="swiper-tab-item {{activeIndex == index ? 'active' : ''}}" bindtap='clickTab' data-current="{{index}}">{{item.name}}
+    </view>
+  </block>
+</view>
