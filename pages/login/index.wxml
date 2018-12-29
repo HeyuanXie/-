@@ -1,0 +1,24 @@
+<!--pages/login/index.wxml-->
+<view style='display: flex; flex-direction: row; justify-content: space-around'>
+  <image class='logo' src='../../images/logo.png'></image>
+</view>
+<view class='task-list'>
+  <view class='list-item'>
+    <view class='l-l'>
+      <view class='account'></view>
+      <input class='input' placeholder='请输入账号' placeholder-style='color: #c2c2c2;' bindinput='accountInput' bindblur='accountInput' value='{{account}}'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>
+      <view class='password'></view>
+      <input class='input' placeholder='请输入密码' placeholder-style='color: #c2c2c2;' bindinput='passwordInput' bindblur='passwordInput' value='{{password}}'></input>
+    </view>
+  </view>
+</view>
+<view style='display: flex; flex-direction: row-reverse; padding: 0 30rpx;'>
+  <view class='botBtn' bindtap='remember'>记住密码</view>
+  <checkbox class='checkBox' bindtap='remember' checked='{{remembered}}'></checkbox>
+</view>
+
+<button class='loginBtn themeColor' bindtap='login'>登录</button>

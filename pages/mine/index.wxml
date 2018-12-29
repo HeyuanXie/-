@@ -1,0 +1,29 @@
+<!--pages/mine/index.wxml-->
+<view class='space'></view>
+<view class='task-list'>
+  <view class='list-item' bindtap='chooseImg'>
+    <view class='l-l gray'>头像</view>
+    <view class='l-r i_jiantou'>
+      <image class='photo' src='{{app.globalData.userInfo.face}}'></image>
+    </view>
+  </view>
+  <navigator class='list-item' url="./change?title=名字&value={{app.globalData.userInfo.contact_person}}">
+    <view class='l-l gray'>姓名</view>
+    <view class='l-r gray'>{{app.globalData.userInfo.contact_person}} </view>
+  </navigator>
+  <navigator class='list-item' url="./change?title=联系电话&value={{app.globalData.userInfo.contact_phone}}">
+    <view class='l-l gray'>职位</view>
+    <view class='l-r gray'>{{app.globalData.userInfo.contact_phone}} </view>
+  </navigator>
+  <view class='space'></view>
+  <navigator class='list-item' url='./staff'>
+    <view class='l-l'>下属员工</view>
+    <view class='l-r i_jiantou'></view>
+  </navigator>
+  <navigator class='list-item' url='../login/changePS'>
+    <view class='l-l'>修改密码</view>
+    <view class='l-r i_jiantou'></view>
+  </navigator>
+  <view class='space'></view>
+  <view class='logoutBtn' bindtap='logout'>退出登录</view>
+</view>

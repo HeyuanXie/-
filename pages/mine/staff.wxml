@@ -1,0 +1,12 @@
+<!--pages/mine/staff.wxml-->
+<view class='task-list'>
+  <view class='list-item' wx:for="{{dataArray}}" wx:key="key">
+    <image class='avatar'></image>
+    <view style='display: inline-block; padding-left: 28rpx;'>
+      <view class='name'>张三
+      <view class='position'> 销售经理 </view></view>
+      <view class='work'>暂无工作安排</view>
+    </view>
+    <view class='l-r i_jiantou'></view>
+  </view>
+</view>

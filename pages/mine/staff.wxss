@@ -1,0 +1,36 @@
+/* pages/mine/staff.wxss */
+.list-item {
+  padding: 45rpx 0 45rpx 30rpx;
+}
+
+.avatar {
+  width: 94rpx;
+  height: 94rpx;
+  background-color: pink;
+  border-radius: 47rpx;
+}
+
+.name {
+  display: inline-flex;
+  font-size: 35rpx;
+	color: #000000;
+  padding-bottom: 14rpx;
+}
+
+.position {
+  height: 38rpx;
+  line-height: 38rpx;
+  text-align: center;
+  font-size: 23rpx;
+  padding: 0 8rpx;
+  color: #7c87df;
+  border: 2rpx solid #7c87df;
+  border-radius: 20rpx;
+  margin-left: 14rpx;
+  margin-top: 4rpx;
+}
+
+.work {
+  font-size: 27rpx;
+	color: #888888;
+}

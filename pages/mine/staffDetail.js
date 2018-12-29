@@ -1,4 +1,4 @@
-// pages/third/index.js
+// pages/mine/staffDetail.js
 Page({
 
   /**

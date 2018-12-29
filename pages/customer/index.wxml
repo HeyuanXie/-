@@ -1,0 +1,35 @@
+<!--pages/customer/index.wxml-->
+<view class='customTab'>
+  <customTab titles="{{cates}}" activeIndex="{{currentIndex}}" bind:clickTab="clickPolicyTab" />
+  <view class='line'></view>
+  <view class='btnsView'>
+    <view class='btn active'>全部</view>
+    <view class='btn'>未分配</view>
+  </view>
+</view>
+<view class='task-list'>
+  <view class='list-item' wx:for="{{dataArray}}">
+    <view class='i_jiantou'>
+      <view class='l-l title'>嘉兴华通果行</view>
+      <view class='l-r'>未分配</view>
+    </view>
+    <view class='store'>江南市场</view>
+    <view class='list-msn'>
+      <view class="text">负责人: 邹冬梅
+        <span class="blue">13642880002
+          <i class="i-phone" style="margin-left:15rpx;"></i>
+        </span>
+      </view>
+      <view class='text'>跟进人: 暂无</view>
+      <view class='text'>创建于: 2018-02-23 23:30:00 </view>
+    </view>
+    <view class='btnView'>
+      <view class='continueBtn'>申请跟进</view>
+    </view>
+  </view>
+
+</view>
+<view class='space'></view>
+<view class='addBtn'>
+  <image src='../../images/addCustomer.png' style='width: 100rpx; height: 100rpx;'></image>
+</view>

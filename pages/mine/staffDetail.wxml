@@ -1,0 +1,9 @@
+<!--pages/mine/staffDetail.wxml-->
+<view class='top'>
+  <view>
+    <image class='avatar'></image>
+    <view class='name'>张三</view>
+    <view class='position'>销售部 销售助理</view>
+    <view class='phone'>18686232434</view>
+  </view>
+</view>

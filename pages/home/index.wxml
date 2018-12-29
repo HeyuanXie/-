@@ -1,2 +1,42 @@
-<!--pages/home/index.wxml-->
-<text>pages/home/index.wxml</text>
+<!-- topView -->
+<view class='topView'>
+  <image class='backImg' src='../../images/backImg.png'></image>
+  <view>
+    <view style='display: flex; flex-direction: row; align-items: center;'>
+      <image class='avatar' src='../../images/wode-2.png'></image>
+      <view class='hi'>Hi, 张三</view>
+    </view>
+    <view class='titleLbl'>人之所以能，是相信能！</view>
+  </view>
+</view>
+<!-- grids-4 -->
+<view class='grids-4'>
+  <view class='grids-item grids-item-4' wx:for="{{grids}}" wx:key="key" bindtap='gridBtnClick' data-url='{{item.url}}'>
+    <image class='grids-img' src='{{item.img}}'></image>
+    <view class='title'>{{item.name}}</view>
+  </view>
+</view>
+<!-- notice -->
+<view class='flex-h' style='background-color: #fff;'>
+  <image src='../../images/yejigonggao.png' style='width: 125rpx; height: 31rpx; margin-left: 30rpx;'/>
+  <text class='notice'>恭喜张三签约佳慧果业</text>
+</view>
+<view class='space'></view>
+<!-- dataView -->
+<view>
+  <view class='i_qianlima header'> 我的业绩</view>
+  <view class='grids-2'>
+    <view class='grids-item'>
+      <view class='dataTitle'>本月到账金额</view>
+      <view class='dataContent firstContent'>0</view>
+      <view class='dataTitle'>预计本月提成</view>
+      <view class='dataContent'>900</view>
+    </view>
+    <view class='grids-item'>
+      <view class='dataTitle'>本月签约金额</view>
+      <view class='dataContent firstContent'>0</view>
+      <view class='dataTitle'>本月业绩指标(50%)</view>
+      <view class='dataContent'>900</view>
+    </view>
+  </view>
+</view>

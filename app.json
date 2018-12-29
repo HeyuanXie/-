@@ -1,9 +1,13 @@
 {
   "pages": [
+    "pages/login/index",
     "pages/home/index",
-    "pages/second/index",
-    "pages/third/index",
-    "pages/forth/index"
+    "pages/customer/index",
+    "pages/message/index",
+    "pages/mine/index",
+    "pages/login/changePS",
+    "pages/mine/staff",
+    "pages/mine/staffDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,33 +16,34 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor": "#0B97EA",
+    "selectedColor": "#7c87df",
+    "color": "#b4b4b4",
     "backgroundColor": "#fff",
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/home/index",
-        "text": "首页",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "工作台",
+        "iconPath": "images/gongzuo.png",
+        "selectedIconPath": "images/gongzuo-2.png"
       },
       {
-        "pagePath": "pages/second/index",
-        "text": "申报通知",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "pagePath": "pages/customer/index",
+        "text": "客户",
+        "iconPath": "images/kehu.png",
+        "selectedIconPath": "images/kehu-2.png"
       },
       {
-        "pagePath": "pages/third/index",
-        "text": "新闻动态",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "pagePath": "pages/message/index",
+        "text": "消息",
+        "iconPath": "images/xiaoxi.png",
+        "selectedIconPath": "images/xiaoxi-2.png"
       },
       {
-        "pagePath": "pages/forth/index",
+        "pagePath": "pages/mine/index",
         "text": "我的",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode-2.png"
       }
     ]
   }

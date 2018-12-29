@@ -1,11 +1,11 @@
-// pages/forth/index.js
+// pages/mine/staff.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    dataArray: ['','']
   },
 
   /**

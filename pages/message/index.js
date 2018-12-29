@@ -1,4 +1,4 @@
-// pages/second/index.js
+// pages/message/index.js
 Page({
 
   /**

@@ -1,0 +1,14 @@
+<!--pages/login/changePS.wxml-->
+<view class='task-list'>
+  <view class='list-item'>
+    <input class='input' password placeholder='输入旧密码' bindblur='oldInput'></input>
+  </view>
+  <view class='forget'>如忘记密码，请联系管理员修改</view>
+  <view class='list-item'>
+    <input class='input' password placeholder='输入新密码' bindblur='newInput'></input>
+  </view>
+  <view class='list-item'>
+    <input class='input' password placeholder='再次确认新密码' bindblur='confirmInput'></input>
+  </view>
+</view>
+<view class='confirmBtn' bindtap='confirm'>确认修改</view>

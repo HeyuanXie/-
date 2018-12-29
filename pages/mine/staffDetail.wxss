@@ -1,0 +1,34 @@
+/* pages/mine/staffDetail.wxss */
+
+.top {
+  /* position: fixed; */
+  display: block;
+  width: 100%;
+  height: 416rpx;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.avatar {
+  width: 154rpx;
+  height: 154rpx;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+.name {
+  font-size: 36rpx;
+  color: #000;
+}
+
+.position {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.phone {
+  font-family: PingFang-SC-Medium;
+  font-size: 32rpx;
+  color: #7c87df;
+}

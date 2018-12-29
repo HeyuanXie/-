@@ -1,31 +1,22 @@
-// pages/home/index.js
+// pages/customer/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    grids: [{
-      name: "任务计划",
-      img: "../../images/renwujihua.png",
-      url: "../wantAid/index"
-    },
-    {
-      name: "跟进记录",
-      img: "../../images/genjinjilu.png",
-      url: "../policy/guide"
-    },
-    {
-      name: "合同",
-      img: "../../images/hetong.png",
-      url: "../interaction/list"
-    },
-    {
-      name: "商机",
-      img: "../../images/shangji.png",
-      url: "../policy/index"
-    },
+    cates: [
+      {
+        name: '客户池'
+      },
+      {
+        name: '潜在客户'
+      },
+      {
+        name: '我的客户'
+      }
     ],
+    dataArray:['','']
   },
 
   /**
