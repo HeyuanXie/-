@@ -15,6 +15,10 @@ Component({
     canSwipe: {
       type: Boolean,
       value: false
+    },
+    spaceAround: {
+      type: Boolean,
+       value: false
     }
   },
 

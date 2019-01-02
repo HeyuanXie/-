@@ -8,6 +8,14 @@
   justify-content: space-between;
 }
 
+.spaceAround {
+  justify-content: space-around;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
 .swiper-tab-item {
   color: #000;
   font-weight: normal;

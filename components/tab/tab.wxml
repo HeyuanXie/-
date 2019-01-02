@@ -1,5 +1,5 @@
 <!--component/tab/tab.wxml-->
-<view class='swiper-tab fixed'>
+<view class="swiper-tab fixed {{spaceAround == true ? 'spaceAround' : 'spaceBetween'}}">
   <block wx:for="{{titles}}" wx:for-item="item" wx:for-index="index" wx:key="key">
     <view class="swiper-tab-item {{activeIndex == index ? 'active' : ''}}" bindtap='clickTab' data-current="{{index}}">{{item.name}}
     </view>
