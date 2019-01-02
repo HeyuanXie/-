@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "customTab": "/components/tab/tab"
+  }
+}

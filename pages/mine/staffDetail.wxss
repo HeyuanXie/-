@@ -1,16 +1,16 @@
 /* pages/mine/staffDetail.wxss */
 
 .top {
-  /* position: fixed; */
-  display: block;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 416rpx;
   align-items: center;
-  align-content: center;
-  justify-content: space-around;
 }
 
 .avatar {
+  margin-top: 32rpx;
   width: 154rpx;
   height: 154rpx;
   border-radius: 50%;
@@ -18,17 +18,19 @@
 }
 
 .name {
+  padding-top: 25rpx;
   font-size: 36rpx;
   color: #000;
 }
 
 .position {
+  padding-top: 24rpx;
   font-size: 28rpx;
   color: #888;
 }
 
 .phone {
-  font-family: PingFang-SC-Medium;
-  font-size: 32rpx;
-  color: #7c87df;
+  padding-top: 38rpx;
+	font-size: 30rpx;
+	color: #7c87df;
 }
