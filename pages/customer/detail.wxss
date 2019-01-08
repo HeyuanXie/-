@@ -1,0 +1,89 @@
+/* pages/customer/detail.wxss */
+@import "./add.wxss";
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 114rpx;
+  z-index: 10;
+}
+
+.topTab {
+  top: 0;
+  left: 0;
+  height: 88rpx;
+  width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.tab-item {
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0rpx 50rpx;
+  font-size: 32rpx;
+  display: inline-block;
+}
+
+.active {
+  color: #7c87df;
+}
+
+.contentScroll {
+  margin: 114rpx 0 124rpx 0;
+}
+
+.leftColumn, .rightColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leftColumn view:not(:last-child), .rightColumn view:not(:last-child) {
+  padding-bottom: 22rpx;
+}
+
+.leftColumn view, .rightColumn view {
+  font-size: 28rpx;
+  text-align: left;
+}
+
+.rightColumn {
+  padding-left: 40rpx;
+}
+
+.l-r {
+  font-size: 28rpx;
+}
+
+.black {
+  color: #000 !important;
+  font-size: 32rpx !important;
+}
+
+.phone {
+  color: #7c87df;
+  font-size: 30rpx;
+}
+
+.i_boda {
+  font-size: 34rpx;
+}
+
+.botView {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  flex-direction: row-reverse;
+}
+
+.btn {
+  color: #000;
+  margin-right: 30rpx;
+}

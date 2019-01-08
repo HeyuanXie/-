@@ -1,0 +1,58 @@
+/* pages/work/record.wxss */
+page {
+  background-color: #f5f5f5;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0 !important;
+}
+
+.company {
+  font-size: 32rpx;
+  padding-top: 9rpx;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 28rpx 0;
+  border-bottom: 1rpx solid #ebebeb;
+}
+
+.time, .type, .person {
+  font-size: 28rpx;
+}
+
+.type {
+  padding: 16rpx 0;
+}
+
+.time::before {
+  content: '跟进时间: ';
+}
+
+.type::before {
+  content: '跟进方式: ';
+}
+
+.person::before {
+  content: '跟进人: ';
+}
+
+.time::before, .type::before, .person::before {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.detail {
+  display: flex;
+  padding: 34rpx 0;
+  color: #888;
+  font-size: 28rpx;
+}
+
+.detail .l-r {
+  padding-right: 0 !important;
+}

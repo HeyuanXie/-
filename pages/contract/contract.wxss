@@ -1,0 +1,58 @@
+/* pages/contract/contract.wxss */
+
+page {
+  background-color: #f5f5f5;
+}
+
+.customTab {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  max-height: 205rpx;
+}
+
+.task-list {
+  padding-top: 84rpx;
+}
+
+.list-item {
+  flex-direction: column;
+  padding: 0 30rpx 41rpx 30rpx;
+}
+
+.name {
+  padding: 38rpx 0;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #888;
+}
+
+.black {
+  color: #000;
+}
+
+.statusLbl {
+  font-size: 28rpx;
+  color: #ff5a00;
+  padding-right: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.customer, .money, .deadline {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.money {
+  padding: 18rpx 0;
+}
+
+.img {
+  width: 202rpx;
+  height: 202rpx;
+  position: absolute;
+  right: -30rpx;
+  bottom: -30rpx;
+}

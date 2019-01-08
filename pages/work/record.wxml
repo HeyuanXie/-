@@ -1,0 +1,16 @@
+<!--pages/work/record.wxml-->
+<view class='task-list'>
+  <view class='list-group' wx:for="{{dataArray}}">
+    <view class='list-item'>
+      <view class='company'>陆家果业有限公司</view>
+      <view class='box'>
+        <text class='time' space="ensp"> 2019-01-04 12:00</text>
+        <text class='type' space="ensp"> 面谈</text>
+        <text class='person' space="ensp"> 张三</text>
+      </view>
+      <view class='detail'>查看详情
+        <view class='i_jiantou l-r'></view>
+      </view>
+    </view>
+  </view>
+</view>

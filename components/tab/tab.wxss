@@ -1,5 +1,16 @@
 /* component/tab/tab.wxss */
 
+.float_container {
+  position: fixed;
+  width: 100%;
+  /*悬停关键样式*/
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 84rpx;
+  background-color: white;
+}
+
 .swiper-tab {
   padding: 0 30rpx;
   height: 84rpx;
@@ -28,6 +39,11 @@
   color: #7c87df;
   font-weight: bold;
   border-bottom: 4rpx solid #7c87df;
+}
+
+.common {
+  font-size: 28rpx;
+  font-weight: normal;
 }
 
 .swiper {

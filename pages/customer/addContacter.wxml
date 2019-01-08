@@ -1,0 +1,14 @@
+<!--pages/customer/addContacter.wxml-->
+<view class='task-list'>
+  <view class='list-item'>
+    <input class='l-l' placeholder='联系人' placeholder-class='placeholder'></input>
+  </view>
+  <view class='list-item'>
+    <input class='l-l' placeholder='联系方式' placeholder-class='placeholder'></input>
+  </view>
+  <view class='list-item'>
+    <input class='l-l'  placeholder='职位' placeholder-class='placeholder'></input>
+  </view>
+</view>
+
+<view class='commitBtn'>提交</view>

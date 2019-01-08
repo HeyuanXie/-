@@ -72,7 +72,7 @@ Page({
     password.password = ''
     wx.setStorageSync('password', password)
     wx.reLaunch({
-      url: '../login/login',
+      url: '../login/index',
     })
   }
 })

@@ -1,0 +1,52 @@
+<!--pages/chance/detail.wxml-->
+<view class='task-list'>
+  <view class='list-item'>
+    <view class='l-l'>商机名称</view>
+    <view class='l-r'>
+      <input placeholder-class='placeholder' placeholder='商机名称'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>客户</view>
+    <view class='l-r'>
+      <input placeholder-class='placeholder' placeholder='客户'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>负责人</view>
+    <view class='l-r'>
+      <input placeholder-class='placeholder' placeholder='负责人'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>联系方式</view>
+    <view class='l-r'>
+      <input placeholder-class='placeholder' placeholder='联系方式' value=''></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>预计金额(元)</view>
+    <view class='l-r'>
+      <input placeholder-class='placeholder' placeholder='预计金额(元)'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>预计完成时间</view>
+    <picker class='l-r i_jiantou' style='display: flex; flex-direction: row;' mode='date'>
+      <input class='dateInput' placeholder='预计完成时间' placeholder-class='placeholder' disabled></input>
+    </picker>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>备注</view>
+    <view class='l-r'>
+      <input placeholder-class='placeholder' placeholder='备注'></input>
+    </view>
+  </view>
+  <view class='space'></view>
+  <view class='list-item'>
+    <view class='l-l'>创建时间</view>
+    <view class='l-r'>2018-02-23 23:00</view>
+  </view>
+</view>
+
+<view class='commitBtn'>保存</view>

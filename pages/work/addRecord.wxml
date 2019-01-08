@@ -1,0 +1,28 @@
+<!--pages/work/addRecord.wxml-->
+<view class='task-list'>
+  <view class='list-item'>
+    <view class='l-l'>跟进时间</view>
+    <picker class='l-r i_jiantou' style='display: flex; flex-direction: row;' mode='date'>
+      <input class='dateInput' placeholder='选择跟进时间' placeholder-class='placeholder' disabled></input>
+    </picker>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>跟进方式</view>
+    <input class='l-r' placeholder='例如: 电话、微信等' placeholder-class='placeholder'></input>
+  </view>
+  <view class='space'></view>
+</view>
+<view class='list-item'>
+  <textarea class='textview' placeholder='跟进情况的详细说明' placeholder-style='#c2c2c2' bindblur='inputDescFinish'></textarea>
+</view>
+<!-- 图片上传 -->
+<view class='photo'>
+  <view class='p-tit'>上传照片</view>
+  <view class="img" wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+    <image src="{{imgUrl}}?fileId={{item}}" data-src="{{imgUrl}}?fileId={{item}}" mode="aspectFill" bindtap='previewImg'></image>
+    <view class="i-del" data-index="{{index}}" catchtap="deleteImg"></view>
+  </view>
+  <view class="upload-img-btn" hidden='{{imgs.length == 4}}' bindtap="chooseImg"></view>
+</view>
+
+<view class='commitBtn'>提交</view>

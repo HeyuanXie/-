@@ -1,0 +1,10 @@
+<!--pages/message/plan.wxml-->
+<view class='task-list'>
+  <view class='list-item' wx:for="{{dataArray}}" wx:key="key" bindtap='seeDetail'>
+    <view class='date'>21:00</view>
+    <view class='content'>
+      <view class='title'>到佳慧测试打印功能</view>
+      <view class='detail'>查看详情<i class='i_jiantou'/></view>
+    </view>
+  </view>
+</view>

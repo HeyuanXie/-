@@ -1,0 +1,30 @@
+<!--pages/chance/add.wxml-->
+<view class='task-list'>
+  <view class='list-item'>
+    <input placeholder='商机名称' placeholder-class='placeholder'></input>
+  </view>
+  <view class='list-item'>
+    <input placeholder='客户' placeholder-class='placeholder' disabled></input>
+    <view class='l-r i_jiantou'></view>
+  </view>
+  <view class='list-item'>
+    <input placeholder='负责人' placeholder-class='placeholder'></input>
+  </view>
+  <view class='list-item'>
+    <input placeholder='联系方式' placeholder-class='placeholder'></input>
+  </view>
+  <view class='list-item'>
+    <input placeholder='预计金额(元)' placeholder-class='placeholder'></input>
+  </view>
+  <view class='list-item'>
+    <picker style='display: flex; flex-direction: row;' mode='date'>
+      <input class='dateInput' placeholder='预计完成时间' placeholder-class='placeholder' disabled></input>
+    </picker>
+  </view>
+  <view class='space'></view>
+  <view class='list-item'>
+    <input placeholder='备注' placeholder-class='placeholder'></input>
+  </view>
+</view>
+
+<view class='commitBtn'>提交</view>

@@ -1,0 +1,82 @@
+/* pages/customer/add.wxss */
+
+page {
+  background-color: #f5f5f5;
+}
+
+.list-item {
+  background-color: white;
+}
+
+.list-item .l-r {
+  padding-right: 0;
+}
+
+.list-item .l-l {
+  color: #888;
+}
+
+.header {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #000 !important;
+}
+
+.placeholder {
+  font-size: 32rpx !important;
+  color: #888 !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-family: "iconfont" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dateInput {
+  text-align: right;
+}
+
+.moneyInput {
+  width: 80rpx;
+  border-bottom: 1rpx solid #cdcdcd;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.saveBtn {
+  margin: 60rpx 30rpx 30rpx 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 45rpx;
+  background-color: #7c87df;
+  text-align: center;
+  color: white;
+  font-size: 32rpx;
+}
+
+.scrollContent {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.scroll {
+  display: flex;
+  white-space: nowrap;
+  height: 150rpx;
+  width: 400rpx;
+}
+
+.scroll-item {
+  width: 150rpx;
+  height: 150rpx;
+  display: flex;
+  margin-right: 10rpx;
+  margin-bottom: 5rpx;
+}
+
+.addImg {
+  position: absolute;
+  right: 0;
+  width: 150rpx;
+  height: 150rpx;
+}

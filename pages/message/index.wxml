@@ -1,2 +1,13 @@
 <!--pages/message/index.wxml-->
-<text>pages/message/index.wxml</text>
+<view class='task-list'>
+  <view class='list-item' wx:for="{{datas}}" wx:key="key" bindtap='seeDetail' data-index='{{index}}'>
+    <image class='img' src='{{item.src}}'></image>
+    <view style='display: flex; flex-direction: column; flex-grow: 1;'>
+      <view style='display: flex; flex-direction: row; justify-content: space-between'>
+        <view class='title'>{{item.title}}</view>
+        <view class='date'>昨天</view>
+      </view>
+      <view class='desc'>洪鹏给你指派了一个任务。</view>
+    </view>
+  </view>
+</view>

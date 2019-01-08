@@ -1,0 +1,97 @@
+<!--pages/customer/add.wxml-->
+<view class='task-list'>
+  <view class='list-item'>
+    <view class='l-l header'>基本信息</view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>企业/档口名称</view>
+    <view class='l-r'>
+      <input placeholder='请输入名称' placeholder-class='placeholder'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>所在市场</view>
+    <view class='l-r i_jiantou' style='display: flex; flex-direction: row;' bindtap='selectMarket'>
+      <input class='dateInput' placeholder='请选择市场' placeholder-class='placeholder' disabled></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>负责人</view>
+    <view class='l-r'>
+      <input placeholder='请输入姓名' placeholder-class='placeholder'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>联系电话</view>
+    <view class='l-r'>
+      <input placeholder='请输入电话' placeholder-class='placeholder'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>地址</view>
+    <view class='l-r'>
+      <input placeholder='请输入地址' placeholder-class='placeholder'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>GMV规模</view>
+    <view class='l-r'>
+      <view>约</view>
+      <input class='moneyInput' placeholder=' '>
+      </input>
+      <view>亿元/年</view>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>地址</view>
+    <view class='l-r'>
+      <input placeholder='门店数量' placeholder-class='placeholder'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>地址</view>
+    <view class='l-r'>
+      <input placeholder='员工数量' placeholder-class='placeholder'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>业务类型</view>
+    <view class='l-r i_jiantou' bindtap='selectType'>
+      <input class='l-r' placeholder='选择业务类型' placeholder-class='placeholder' disabled></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>主营产品</view>
+    <picker class='l-r i_jiantou' style='display: flex; flex-direction: row;'>
+      <input placeholder='选择主营产品' placeholder-class='placeholder' disabled></input>
+    </picker>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>软件预算(元)</view>
+    <view class='l-r'>
+      <input placeholder='请输入预算' placeholder-class='placeholder'></input>
+    </view>
+  </view>
+  <view class='list-item scrollContent'>
+    <view class='l-l'>添加附件</view>
+    <view class='l-r' style='justify-content: flex-start; flex-flow: row-reverse wrap; margin-left: 30rpx;'>
+      <view class='scroll-item' wx:for="{{imgUrls}}">
+        <image src='/images/backImg.png' style='width: 150rpx; height: 150rpx; position: relative;'>
+          <image src='/images/delete_img.png' style='position: absolute; top: 5rpx; right: 5rpx; width: 36rpx; height: 36rpx;'></image>
+        </image>
+      </view>
+      <image class='scroll-item' src='/images/add_img.png'></image>
+    </view>
+  </view>
+  <view class='space'></view>
+  <view class='list-item' bindtap='addContact'>
+    <view class='l-l header'>添加联系人信息</view>
+    <view class='l-r i_jiantou'></view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>张三/销售经理/1834834723</view>
+
+  </view>
+  <view class='saveBtn'>保存</view>
+
+</view>

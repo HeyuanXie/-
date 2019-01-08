@@ -1,4 +1,6 @@
 // pages/mine/staffDetail.js
+var rate = 0; //分辨转换
+var floatTop = 0; //悬浮高度
 Page({
 
   /**
@@ -12,6 +14,7 @@ Page({
         name: '已完成'
       }
     ],
+    dataArray: ['','','','','','','','',''],
     isShowFloatTab: false,
   },
 
@@ -19,7 +22,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.getScrollTop()
   },
 
   /**
@@ -61,13 +64,17 @@ Page({
       wx: wx.getSystemInfo({
         success: function (res) {
           rate = res.screenWidth / 750;
-          floatTop = 84 * rate;
+          floatTop = 416 * rate;
           that.setData({
-            scrollTop: 84 * res.screenWidth / 750,
+            scrollTop: 416 * res.screenWidth / 750,
             scrollHeight: res.screenHeight / (res.screenWidth / 750) - 128,
           });
         }
       });
     }
+  },
+
+  clickTab: function() {
+    
   }
 })

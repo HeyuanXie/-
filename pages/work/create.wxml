@@ -1,0 +1,43 @@
+<!--pages/work/create.wxml-->
+<view class='task-list'>
+  <view class='list-item'>
+    <view class="l-l">
+      <input placeholder='请输入计划标题' placeholder-style='#c2c2c2' value='{{name}}' bindblur='nameInput'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <textarea class='textview' placeholder='请输入计划内容' placeholder-style='#c2c2c2;' bindblur='{{descInput}}'></textarea>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>时间</view>
+    <view class="l-r i_jiantou">
+      <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">{{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}
+      </picker>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>提醒</view>
+    <view class="l-r i_jiantou">
+      <picker mode='time'>
+        <text>工作开始时</text>
+      </picker>
+    </view>
+  </view>
+  <view class='space'></view>
+  <view class='list-item'>
+    <view class='l-l'>任务目标</view>
+    <view class="l-r">
+      <input style='font-size: 32rpx;' placeholder='请填写任务目标' placeholder-style='color: #c2c2c2;'></input>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view class='l-l'>计划完成时间</view>
+    <view class="l-r i_jiantou">
+      <picker mode='date'>
+        <text>0000-00-00</text>
+      </picker>
+    </view>
+  </view>
+</view>
+
+<view class='commitBtn'>提交</view>

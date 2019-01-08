@@ -1,1 +1,40 @@
 /* pages/message/index.wxss */
+
+.list-item {
+  padding: 0;
+  align-items: center;
+}
+
+.img {
+  width: 86rpx;
+  height: 86rpx;
+  margin: 0 30rpx;
+}
+
+.img::after {
+  border-radius: 10rpx;
+  width: 20rpx;
+  height: 20rpx;
+  background-color: red;
+  content: '2';
+}
+
+.title {
+  padding-top: 37rpx;
+  padding-bottom: 17rpx;
+  font-size: 32rpx;
+  color: #000;
+}
+
+.date {
+  padding-top: 37rpx;
+  font-size: 24rpx;
+  color: #888;
+  padding-right: 30rpx;
+}
+
+.desc {
+  padding-bottom: 37rpx;
+  font-size: 28rpx;
+  color: #888;
+}

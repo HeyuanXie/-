@@ -1,0 +1,18 @@
+<!--pages/chance/index.wxml-->
+<view class='customTab'>
+  <customTab titles="{{cates}}" spaceAround='false' activeIndex="{{currentIndex}}" bind:clickTab="clickTab" />
+</view>
+<view class='task-list'>
+  <view class='list-group' wx:for="{{dataArray}}">
+    <view class='list-item' bindtap='seeDetail'>
+      <view style='display: flex; flex-direction: row;'>
+        <view class="l-l name">商机名称</view>
+        <view class='l-r i_jiantou' style='padding-right: 0;'></view>
+      </view>
+      <text class='customer'>陆家果业有限公司</text>
+      <text class='money'>金额：5000元</text>
+    </view>
+  </view>
+</view>
+
+<view class='addBtn i_addRound i_xinzeng' bindtap='addData'> 新增商机</view>

@@ -5,11 +5,11 @@ page {
 
 .list-item {
   background-color: white;
+  padding-right: 0;
 }
 
 .list-item .l-r {
   font-size: 30rpx;
-  padding-right: 16rpx;
 }
 
 .gray {

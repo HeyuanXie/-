@@ -1,0 +1,8 @@
+<!--pages/work/select.wxml-->
+<view class='task-list'>
+  <view class='list-item' wx:for="{{dataArray}}" bindtap='selectItem' data-index='{{index}}'>
+    <view class="l-l {{item.selected ? 'selected' : ''}}">{{item.title}}</view>
+    <image class='img' style="display: {{item.selected ? '' : 'none'}}" src='/images/gouxuan.png'></image>
+  </view>
+</view>
+<view class='commitBtn' hidden='{{contentType != 0}}' bindtap='commit'>确定</view>

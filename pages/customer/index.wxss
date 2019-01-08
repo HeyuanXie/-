@@ -46,7 +46,6 @@ page {
 .list-item {
   display: flex;
   flex-direction: column;
-  margin: 24rpx 30rpx 0 30rpx;
   padding-top: 16rpx;
   padding-bottom: 0rpx;
   border-radius: 10rpx;
@@ -71,9 +70,16 @@ page {
   padding-right: 10rpx;
 }
 
+.storeContent {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
 .store {
-  overflow: auto;
-  padding: 10rpx 14rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 6rpx 10rpx;
   background-color: #fff7f3;
   border-radius: 5rpx;
   border: solid 1rpx #ffdac8;
@@ -95,6 +101,8 @@ page {
 
 .blue {
   color: #7c87df;
+  font-size: 28rpx;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .btnView {
@@ -120,6 +128,6 @@ page {
 
 .addBtn {
   position: fixed;
-  bottom: 217rpx;
+  bottom: 118rpx;
   right: 53rpx;
 }

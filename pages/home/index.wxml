@@ -24,7 +24,7 @@
 <view class='space'></view>
 <!-- dataView -->
 <view>
-  <view class='i_qianlima header'> 我的业绩</view>
+  <view class='i_yeji header'> 我的业绩</view>
   <view class='grids-2'>
     <view class='grids-item'>
       <view class='dataTitle'>本月到账金额</view>

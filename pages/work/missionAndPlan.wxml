@@ -1,0 +1,33 @@
+<!--pages/work/missionAndPlan.wxml-->
+<view class='radioContent fixed'>
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}" wx:key="" class="{{selectMissionType == item.missionType ? 'selected': ''}}">
+      <radio value="{{item.missionType}}" checked="{{item.checked}}" /> {{item.title}}
+    </label>
+  </radio-group>
+</view>
+<view class='customTab fixed'>
+  <customTab titles="{{cates}}" spaceAround='false' fontBold='{{false}}' activeIndex="{{currentIndex}}" bind:clickTab="clickTab" />
+</view>
+<view class='task-list'>
+  <view class='list-group' wx:for="{{dataArray}}" wx:key="key">
+    <view class='list-item'>
+      <view class='titleBox' bindtap='seeDetail' data-id='{{item.id}}'>
+        <view class='l-l'>到佳慧测试打印功能</view>
+        <view class='l-r i_jiantou'></view>
+      </view>
+      <view class='desc'>查看打印出来的单子样式有没有问题，清晰度如何， 如有问题需要技术部马上配合调整。
+      </view>
+      <view class='box'>
+        <text class='creater'>指派人: 洪鹏</text>
+        <text class='person'>任务目标: 佳慧</text>
+        <text class='time'>工作时间: 2019-02-23 12:00</text>
+      </view>
+      <view class='btns'>
+        <view class='btn' bindtap='feedback'>工作反馈</view>
+        <view class='btn' bindtap='deleteData'>删除</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='addBtn i_addRound i_xinzeng' bindtap='addData'> 创建计划</view>

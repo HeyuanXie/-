@@ -1,0 +1,54 @@
+<!--pages/work/missionDetail.wxml-->
+<view class='task-list'>
+  <!-- 头部任务信息 -->
+  <view class='list-item detail'>
+    <view class='title'>到佳慧测试打印功能</view>
+    <view class='desc'>查看打印出来的单子样式有没有问题，清晰度如 何，如有问题需要技术部马上配合调整。
+    </view>
+    <view style='padding-top: 160rpx;'>
+      <view class='time i_shijian'> 时间: {{missionTime}}</view>
+      <view class='alert i_tixing'> 提醒:
+        <text class='i_jiantou_color'>{{alertTime}}</text>
+      </view>
+    </view>
+    <view class='finishBtn'>完成</view>
+  </view>
+
+  <!-- 任务目标和时间 -->
+  <view class='list-item date'>
+    <view class='dateContent'>
+      <view class='l-l'>任务目标</view>
+      <input placeholder='请输入任务目标' placeholder-style='color: #c2c2c2;font-family: PingFang-SC-Medium;'></input>
+    </view>
+  </view>
+  <view class='list-item date'>
+    <view class='dateContent'>
+      <view class='l-l'>计划完成时间</view>
+      <picker mode='date'>
+        <text class='i_jiantou'>2019-01-01</text>
+      </picker>
+    </view>
+  </view>
+  <view class='list-item date'>
+    <view class='dateContent'>
+      <view class='l-l'>实际完成时间</view>
+      <picker mode='date'>
+        <text class='i_jiantou'>2019-01-01</text>
+      </picker>
+    </view>
+  </view>
+  <view class='space'></view>
+  <!-- 反馈 -->
+  <view class='list-item' style='border-bottom: 1rpx solid #f5f5f5 !important;'>
+    <view class='dateContent'>
+      <view class='l-l'>工作反馈</view>
+      <view class='addFeedback i_fankui'> 反馈</view>
+    </view>
+  </view>
+  <view class='list-item'>
+    <view hidden class='feedback'>
+      暂无反馈</view>
+    <view class='feedback'>阿斯顿发到付asdf阿萨德法师法师法师打发的方式是打发发生的发生发大水法法师打发斯蒂芬阿萨德法师法师法师打发的方式是打发发生的发生发大水法法师打发斯蒂芬</view>
+  </view>
+</view>
+<view class='deleteBtn i_lajitong'> 删除计划</view>

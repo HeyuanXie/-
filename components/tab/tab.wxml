@@ -1,7 +1,32 @@
 <!--component/tab/tab.wxml-->
-<view class="swiper-tab fixed {{spaceAround == true ? 'spaceAround' : 'spaceBetween'}}">
+<view class="swiper-tab {{spaceAround == true ? 'spaceAround' : 'spaceBetween'}}" wx:if="{{fontBold == true}}">
   <block wx:for="{{titles}}" wx:for-item="item" wx:for-index="index" wx:key="key">
     <view class="swiper-tab-item {{activeIndex == index ? 'active' : ''}}" bindtap='clickTab' data-current="{{index}}">{{item.name}}
     </view>
   </block>
+</view>
+
+<view class='float_container' wx:if="{{showFixedTab && fontBold == true}}">
+  <view class="swiper-tab {{spaceAround == true ? 'spaceAround' : 'spaceBetween'}}">
+    <block wx:for="{{titles}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+      <view class="swiper-tab-item {{activeIndex == index ? 'active' : ''}}" bindtap='clickTab' data-current="{{index}}">{{item.name}}
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="swiper-tab {{spaceAround == true ? 'spaceAround' : 'spaceBetween'}}" wx:if="{{fontBold == false}}">
+  <block wx:for="{{titles}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+    <view class="swiper-tab-item common {{activeIndex == index ? 'active' : ''}}" bindtap='clickTab' data-current="{{index}}">{{item.name}}
+    </view>
+  </block>
+</view>
+
+<view class='float_container' wx:if="{{showFixedTab && fontBold == false}}">
+  <view class="swiper-tab {{spaceAround == true ? 'spaceAround' : 'spaceBetween'}}">
+    <block wx:for="{{titles}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+      <view class="swiper-tab-item common {{activeIndex == index ? 'active' : ''}}" bindtap='clickTab' data-current="{{index}}">{{item.name}}
+      </view>
+    </block>
+  </view>
 </view>

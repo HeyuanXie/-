@@ -29,6 +29,8 @@ function formatDate(date, format) {
   const second = date.getSeconds()
   if (format == "yyyy-MM-dd HH:mm:ss") {
     return [year, month, day].map(formatNumber).join('-') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+  } else if (format == "yyyy-MM-dd HH:mm") {
+    return [year, month, day].map(formatNumber).join('-') + ' ' + [hour, minute].map(formatNumber).join(':')
   } else if (format == "yyyy-MM-dd") {
     let time = [year, month, day].map(formatNumber).join('-')
     return time
@@ -37,7 +39,7 @@ function formatDate(date, format) {
     strMonth = month.toString()[1] ? month.toString() : '0' + month.toString
     strDay = day.toString()[1] ? day.toString() : '0' + day.toString
     return strYear + "年" + strMonth + "月" + strDay + "日"
-  }else if (format == "yyyy-MM") {
+  } else if (format == "yyyy-MM") {
     let time = [year, month].map(formatNumber).join('-')
     return time
   }
@@ -79,4 +81,3 @@ module.exports = {
   isPhoneNumber: isPhoneNumber,
   getNowTime: getNowTime,
 }
-

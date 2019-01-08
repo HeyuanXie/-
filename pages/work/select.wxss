@@ -1,0 +1,21 @@
+/* pages/work/select.wxss */
+@import "./create.wxss";
+page {
+  background-color: #f5f5f5;
+}
+
+.list-item {
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.img {
+  width: 28rpx;
+  height: 20rpx;
+  margin-right: 30rpx;
+}
+
+.selected {
+  color: #7c87df;
+}

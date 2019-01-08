@@ -8,22 +8,22 @@ Page({
     grids: [{
       name: "任务计划",
       img: "../../images/renwujihua.png",
-      url: "../wantAid/index"
+      url: "../work/missionAndPlan"
     },
     {
       name: "跟进记录",
       img: "../../images/genjinjilu.png",
-      url: "../policy/guide"
+      url: "../work/record"
     },
     {
       name: "合同",
       img: "../../images/hetong.png",
-      url: "../interaction/list"
+      url: "../contract/contract"
     },
     {
       name: "商机",
       img: "../../images/shangji.png",
-      url: "../policy/index"
+      url: "../chance/index"
     },
     ],
   },
@@ -82,5 +82,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  gridBtnClick: function(e) {
+    let url = e.currentTarget.dataset.url
+    wx.navigateTo({
+      url: url,
+    })
   }
 })

@@ -3,8 +3,17 @@
   <image class='avatar'></image>
   <view class='name'>张三</view>
   <view class='position'>销售部 销售助理</view>
-  <view class='phone'>18686232434</view>
+  <view class='phone i_shouji'> 18686232434</view>
 </view>
 <view class='customTab'>
-  <customTab titles="{{cates}}" activeIndex="{{currentIndex}}" bind:clickTab="clickPolicyTab" fixedBar="{{isShowFloatTab}}" />
+  <customTab titles="{{cates}}" spaceAround activeIndex="{{currentIndex}}" bind:clickTab="clickTab" fixedBar="{{isShowFloatTab}}" />
+</view>
+<view class='task-list'>
+  <view class='list-item' wx:for="{{dataArray}}">
+    <view class='title'>本周六去陆家协调软件实施</view>
+    <view style='display: flex; justify-content: space-between'>
+      <view class='date'>12月5日 周三 13:30</view>
+      <view class='person'>由洪鹏指派</view>
+    </view>
+  </view>
 </view>

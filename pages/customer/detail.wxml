@@ -1,0 +1,206 @@
+<!--pages/customer/detail.wxml-->
+<!-- 顶部tab -->
+<view class='top'>
+  <scroll-view class="topTab" scroll-x="true">
+    <view class="tab-item {{toView == 'base' ? 'active' : ''}}" bindtap='clickTopTab' data-id='base'>基本信息</view>
+    <view class="tab-item {{toView == 'contacter' ? 'active' : ''}}" bindtap='clickTopTab' data-id='contacter'>联系人信息</view>
+    <view class="tab-item {{toView == 'recorder' ? 'active' : ''}}" bindtap='clickTopTab' data-id='recorder'>历史跟进人</view>
+    <view class="tab-item {{toView == 'record' ? 'active' : ''}}" bindtap='clickTopTab' data-id='record'>跟进记录</view>
+    <view class="tab-item {{toView == 'chance' ? 'active' : ''}}" bindtap='clickTopTab' data-id='chance'>商机</view>
+    <view class="tab-item {{toView == 'constract' ? 'active' : ''}}" bindtap='clickTopTab' data-id='constract'>合同</view>
+  </scroll-view>
+  <view class='space'></view>
+</view>
+
+<!-- 中间scrollView -->
+<scroll-view class='contentScroll' style='height: {{contentScrollHeight}}px;' scroll-y="true" scroll-into-view="{{toView}}">
+  <!-- 基本信息 -->
+  <view class='task-list base' id='base'>
+    <view class='list-item'>
+      <view class='l-l header'>基本信息</view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>企业/档口名称</view>
+      <view class='l-r'>
+        <input placeholder='请输入名称' placeholder-class='placeholder'></input>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>所在市场</view>
+      <picker class='l-r i_jiantou' style='display: flex; flex-direction: row;'>
+        <input class='dateInput' placeholder='请选择市场' placeholder-class='placeholder' disabled></input>
+      </picker>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>负责人</view>
+      <view class='l-r'>
+        <input placeholder='请输入姓名' placeholder-class='placeholder'></input>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>联系电话</view>
+      <view class='l-r'>
+        <input placeholder='请输入电话' placeholder-class='placeholder'></input>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>地址</view>
+      <view class='l-r'>
+        <input placeholder='请输入地址' placeholder-class='placeholder'></input>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>GMV规模</view>
+      <view class='l-r'>
+        <view>约</view>
+        <input class='moneyInput' placeholder=' '>
+        </input>
+        <view>亿元/年</view>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>地址</view>
+      <view class='l-r'>
+        <input placeholder='门店数量' placeholder-class='placeholder'></input>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>地址</view>
+      <view class='l-r'>
+        <input placeholder='员工数量' placeholder-class='placeholder'></input>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>服务类型</view>
+      <picker class='l-r i_jiantou'>
+        <input class='l-r' placeholder='选择服务类型' placeholder-class='placeholder' disabled></input>
+      </picker>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>主营产品</view>
+      <picker class='l-r i_jiantou' style='display: flex; flex-direction: row;'>
+        <input placeholder='选择主营产品' placeholder-class='placeholder' disabled></input>
+      </picker>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>软件预算(元)</view>
+      <view class='l-r'>
+        <input placeholder='请输入预算' placeholder-class='placeholder'></input>
+      </view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>附件</view>
+      <view class='' style='margin-left: 30rpx;flex-flow: row wrap'>
+        <image src='/images/add_img.png' style='width:150rpx; height: 150rpx;'></image>
+        <image src='/images/add_img.png' style='width:150rpx; height: 150rpx;'></image>
+        <image src='/images/add_img.png' style='width:150rpx; height: 150rpx;'></image>
+        <image src='/images/add_img.png' style='width:150rpx; height: 150rpx;'></image>
+        <image src='/images/add_img.png' style='width:150rpx; height: 150rpx;'></image>
+        <image src='/images/add_img.png' style='width:150rpx; height: 150rpx;'></image>
+      </view>
+    </view>
+  </view>
+  <view class='space'></view>
+  <!-- 联系人信息 -->
+  <view class='task-list contacter' id='contacter'>
+    <view class='list-item'>
+      <view class='l-l header'>联系人信息</view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l'>
+        <text class='black' space='ensp'>张三 / </text>
+        <text class='black' space='ensp'>销售经理 / </text>
+        <text class='phone' space='ensp'>1832382388</text>
+      </view>
+      <view class='l-r i_boda'></view>
+    </view>
+  </view>
+  <view class='space'></view>
+  <!-- 历史跟进人 -->
+  <view class='task-list recorder' id='recorder'>
+    <view class='list-item'>
+      <view class='l-l header'>历史跟进人</view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l black'>张维富</view>
+      <view class='l-r'>2018.11.23-至今</view>
+    </view>
+  </view>
+  <view class='space'></view>
+  <!-- 跟进记录 -->
+  <view class='task-list record' id='record'>
+    <view class='list-item'>
+      <view class='l-l header'>跟进记录</view>
+      <view class='l-r  i_zhankai'></view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l leftColumn'>
+        <view>跟进人</view>
+        <view>跟进时间</view>
+        <view>跟进方式</view>
+        <view>详细说明</view>
+      </view>
+      <view class='l-r rightColumn'>
+        <view>张维富</view>
+        <view>2018.11.10-2018.12.01</view>
+        <view>电话</view>
+        <view>跟客户初步达成了签约意向，12月10日再过 去谈</view>
+      </view>
+    </view>
+    <view class='list-item flex-hc'>
+      <view class='btn' style='padding: 16rpx 48rpx; font-size: 28rpx; color: #888;'>添加跟进记录</view>
+    </view>
+  </view>
+  <view class='space'></view>
+  <!-- 商机 -->
+  <view class='task-list chance' id='chance'>
+    <view class='list-item'>
+      <view class='l-l header'>商机</view>
+      <view class='l-r  i_zhankai'></view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l leftColumn'>
+        <view>商机名称</view>
+        <view>客户名称</view>
+        <view>预计金额</view>
+      </view>
+      <view class='l-r rightColumn'>
+        <view>有意向使用我们的软件</view>
+        <view>陆家果业有限公司</view>
+        <view>5000元</view>
+      </view>
+    </view>
+    <view class='list-item flex-hc'>
+      <view class='btn' style='padding: 16rpx 48rpx; font-size: 28rpx; color: #888;'>添加商机</view>
+    </view>
+  </view>
+  <view class='space'></view>
+  <!-- 合同 -->
+  <view class='task-list constract' id='constract'>
+    <view class='list-item'>
+      <view class='l-l header'>合同</view>
+      <view class='l-r i_zhankai'></view>
+    </view>
+    <view class='list-item'>
+      <view class='l-l leftColumn'>
+        <view>合同名称</view>
+        <view>客户名称</view>
+        <view>金额</view>
+        <view>有效期至</view>
+      </view>
+      <view class='rightColumn'>
+        <view>芝麻地SaaS软件使用合同</view>
+        <view>陆家果业有限公司</view>
+        <view>5000元</view>
+        <view>2019-05-30</view>
+      </view>
+      <view class='l-r'>已付款</view>
+    </view>
+  </view>
+</scroll-view>
+
+<!-- 底部view -->
+<view class='botView flex-h'>
+  <view class='btn btnblue'>放弃跟进</view>
+  <view class='btn'>修改信息</view>
+</view>

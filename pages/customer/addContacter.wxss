@@ -1,0 +1,9 @@
+/* pages/customer/addContacter.wxss */
+@import "../work/create.wxss";
+page {
+  background-color: #f5f5f5;
+}
+
+.list-item {
+  background-color: white;
+}

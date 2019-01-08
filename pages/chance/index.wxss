@@ -1,0 +1,38 @@
+/* pages/chance/index.wxss */
+@import "../work/missionAndPlan.wxss";
+page {
+  background-color: #f5f5f5;
+}
+.customTab {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  max-height: 205rpx;
+}
+
+.task-list {
+  padding-top: 84rpx;
+  padding-bottom: 120rpx;
+}
+
+.list-item {
+  flex-direction: column;
+  padding: 38rpx 30rpx;
+}
+
+.name {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.customer {
+  font-size: 28rpx;
+  color: #888;
+  padding: 14rpx 0 28rpx 0;
+}
+
+.money {
+  font-size: 32rpx;
+}

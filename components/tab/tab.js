@@ -19,6 +19,21 @@ Component({
     spaceAround: {
       type: Boolean,
        value: false
+    },
+    //是否显示顶部固定的tab
+    showFixedTab: {
+      type: Boolean,
+      value: false
+    },
+    fixedBar: {
+      type: Boolean,
+      value: false,
+      observer: "onScroll"
+    },
+    // 是否加粗
+    fontBold: {
+      type: Boolean,
+      value: true,
     }
   },
 
@@ -41,6 +56,12 @@ Component({
         activeIndex: currentIndex
       })
       this.triggerEvent('clickTab', {currentIndex})
+    },
+
+    onScroll(event) {
+      this.setData({
+        showFixedTab: this.data.fixedBar
+      });
     }
   }
 })

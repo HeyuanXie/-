@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "任务计划",
+  "usingComponents": {
+    "customTab": "/components/tab/tab"
+  }
+}
